@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C8BB562C81318D00EB5426 /* TickTick_navbar_widgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8BB552C81318D00EB5426 /* TickTick_navbar_widgetApp.swift */; };
-		23C8BB582C81318D00EB5426 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8BB572C81318D00EB5426 /* ContentView.swift */; };
+		23A224882C8135C000D2E0CA /* TickTickMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A224872C8135C000D2E0CA /* TickTickMenuBarApp.swift */; };
+		23A2248D2C81414500D2E0CA /* TickTickAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2248C2C81414500D2E0CA /* TickTickAuth.swift */; };
 		23C8BB5A2C81318F00EB5426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8BB592C81318F00EB5426 /* Assets.xcassets */; };
 		23C8BB5E2C81318F00EB5426 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8BB5D2C81318F00EB5426 /* Preview Assets.xcassets */; };
 		23C8BB682C81318F00EB5426 /* TickTick_navbar_widgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8BB672C81318F00EB5426 /* TickTick_navbar_widgetTests.swift */; };
@@ -34,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23A224872C8135C000D2E0CA /* TickTickMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTickMenuBarApp.swift; sourceTree = "<group>"; };
+		23A2248B2C8140F100D2E0CA /* TickTick-navbar-widget-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TickTick-navbar-widget-Info.plist"; sourceTree = SOURCE_ROOT; };
+		23A2248C2C81414500D2E0CA /* TickTickAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTickAuth.swift; sourceTree = "<group>"; };
 		23C8BB522C81318D00EB5426 /* TickTick_navbar_widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTick_navbar_widget.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		23C8BB552C81318D00EB5426 /* TickTick_navbar_widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTick_navbar_widgetApp.swift; sourceTree = "<group>"; };
-		23C8BB572C81318D00EB5426 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23C8BB592C81318F00EB5426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C8BB5B2C81318F00EB5426 /* TickTick_navbar_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TickTick_navbar_widget.entitlements; sourceTree = "<group>"; };
 		23C8BB5D2C81318F00EB5426 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -95,10 +96,11 @@
 		23C8BB542C81318D00EB5426 /* TickTick_navbar_widget */ = {
 			isa = PBXGroup;
 			children = (
-				23C8BB552C81318D00EB5426 /* TickTick_navbar_widgetApp.swift */,
-				23C8BB572C81318D00EB5426 /* ContentView.swift */,
+				23A2248B2C8140F100D2E0CA /* TickTick-navbar-widget-Info.plist */,
 				23C8BB592C81318F00EB5426 /* Assets.xcassets */,
 				23C8BB5B2C81318F00EB5426 /* TickTick_navbar_widget.entitlements */,
+				23A224872C8135C000D2E0CA /* TickTickMenuBarApp.swift */,
+				23A2248C2C81414500D2E0CA /* TickTickAuth.swift */,
 				23C8BB5C2C81318F00EB5426 /* Preview Content */,
 			);
 			path = TickTick_navbar_widget;
@@ -259,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C8BB582C81318D00EB5426 /* ContentView.swift in Sources */,
-				23C8BB562C81318D00EB5426 /* TickTick_navbar_widgetApp.swift in Sources */,
+				23A224882C8135C000D2E0CA /* TickTickMenuBarApp.swift in Sources */,
+				23A2248D2C81414500D2E0CA /* TickTickAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +426,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TickTick-navbar-widget-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +465,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TickTick-navbar-widget-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

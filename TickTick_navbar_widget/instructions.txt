@@ -1,0 +1,10 @@
+	1.	We are creating a Mac menu bar app for task tracking.
+	2.	It looks like Wdiget_mockup.png
+	3.	The menu bar displays the current task title and the time remaining.
+	4.	The app connects to the TickTick API to fetch tasks.
+	5.	If a task is upcoming, it shows “Task Title - in Xh Xm.”
+	6.	If a task is due soon, it shows “Task Title - Xm left.”
+	7.	The app updates dynamically based on the nearest task’s due time.
+	8.	The menu bar text automatically refreshes as time passes.
+	9.	The task display should adjust to account for changes in task times from the API.
+	10.	Complete this app in its entirety.
