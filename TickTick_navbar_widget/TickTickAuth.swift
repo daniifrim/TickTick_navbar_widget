@@ -102,7 +102,7 @@ class TickTickAuth: NSObject, ObservableObject, ASWebAuthenticationPresentationC
                 completion(success)
             }
         }
-        
+
         session.presentationContextProvider = self
         session.prefersEphemeralWebBrowserSession = true  // Add this line
         session.start()
@@ -156,7 +156,7 @@ class TickTickAuth: NSObject, ObservableObject, ASWebAuthenticationPresentationC
             }
         }.resume()
     }
-    
+
     private func callTickTick(path: String, httpMethod: String, body: Data? = nil, completion: @escaping (Result<Any, Error>) -> Void) {
         let maxRetries = 3
         let retryDelay: TimeInterval = 1.0
@@ -287,7 +287,7 @@ class TickTickAuth: NSObject, ObservableObject, ASWebAuthenticationPresentationC
                 }
             case .failure(let error):
                 completion(.failure(error))
-            }
+            } 
         }
     }
 
