@@ -110,8 +110,6 @@ class TaskViewModel: ObservableObject {
             return endDate > now
         }
         
-        print("Current or upcoming tasks: \(currentOrUpcomingTasks.count)")
-        
         if let nextTask = currentOrUpcomingTasks.first {
             self.currentTaskTitle = nextTask.truncatedTitle
             self.timeRemaining = nextTask.remainingTime(from: now)
@@ -245,8 +243,19 @@ struct TaskEntryView: View {
     }
     
     private func openTaskInBrowser() {
-        if let url = URL(string: "https://ticktick.com/webapp/#q/today/tasks/\(task.id)") {
-            NSWorkspace.shared.open(url)
+        let workspace = NSWorkspace.shared
+        let tickTickBundleIdentifier = "com.ticktick.task.mac"
+        
+        if let url = workspace.urlForApplication(withBundleIdentifier: tickTickBundleIdentifier) {
+            // Assuming the desktop app supports a URL scheme to open specific tasks
+            if let taskURL = URL(string: "ticktick://task/\(task.id)") {
+                workspace.open(taskURL)
+            }
+        } else {
+            // Fallback to web if the desktop app is not installed
+            if let url = URL(string: "https://ticktick.com/webapp/#q/today/tasks/\(task.id)") {
+                workspace.open(url)
+            }
         }
     }
 }
